@@ -1,0 +1,57 @@
+.messages {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.messages:not(:last-child){
+    margin-bottom: .6rem;
+}
+
+.messages .messageAvatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: solid 1px #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    pointer-events: none;
+    text-transform: uppercase;
+}
+
+.messages .messageTitle p {
+    background: rgb(218, 218, 218);
+    padding: .4rem;
+    border-radius: .4rem;
+    max-width: 584px;
+    pointer-events: none;
+}
+
+/* responsive start */
+
+@media(max-width: 768px) {
+    .messages .messageAvatar {
+        width: 2.6rem;
+        height: 2.6rem;
+        margin-right: .5rem;
+    }
+    .messages .messageTitle p {
+        font-size: .8rem;
+    }
+}
+
+@media(max-width: 624px) {
+    .messages .messageAvatar {
+        width: 2rem;
+        height: 2rem;
+        margin-right: .5rem;
+    }
+    .messages .messageTitle p {
+        font-size: .6rem;
+    }
+}
+
+/* responsive end */

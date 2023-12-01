@@ -1,0 +1,41 @@
+.freands {
+    width: 100%;
+    border: solid 1px #ccc;
+    border-radius: 50px;
+    display: flex;
+    padding: .2rem;
+}
+
+.freands:not(:last-child) {
+    margin-bottom: .8rem;
+}
+
+.freands .freandsAvatar {
+    width: 4rem;
+    height: 4rem;
+    border: solid 1px #ccc;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.freands .freandsAvatar img {
+    width: 100%;
+    pointer-events: none;
+}
+
+.freands .freandsTitle {
+    padding: .4rem 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.freands .freandsTitle .freandsActions button {
+    font-size: .9rem;
+    margin-right: .8rem;
+    font-weight: 600;
+    width: 4.6rem;
+    height: 1.4rem;
+    background: rgb(206, 206, 206);
+    border-radius: .4rem;
+}

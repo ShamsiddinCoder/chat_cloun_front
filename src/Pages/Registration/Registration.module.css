@@ -1,0 +1,88 @@
+.registration {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24rem;
+    background: #fff;
+    z-index: 2;
+    padding: .8rem;
+    border-radius: .6rem;
+    text-align: center;
+}
+
+.registration > input {
+    font-size: 1.2rem;
+    width: 100%;
+    border: solid 1px #ccc;
+    border-radius: .4rem;
+    padding: .4rem;
+    margin-bottom: 1rem;
+}
+
+.registration .choosAvatar {
+    display: flex;
+}
+
+.registration .choosAvatar input {
+    display: none;
+}
+
+.registration .choosAvatar label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(66, 66, 66);
+    width: 100%;
+    height: 2.4rem;
+    border: solid 1px #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+}
+
+.registration a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color:rgb(66, 66, 66);
+    transition: .3s ease;
+    margin-top: 1rem;
+}
+
+.registration a:hover {
+    color: crimson;
+}
+
+.registration button {
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 100%;
+    height: 2.3rem;
+    border-radius: .4rem;
+    background: #ccc;
+}
+
+/* responsive start */
+
+@media(max-width: 425px){
+    .registration {
+        width: 100%;
+    }
+    .registration > input {
+        font-size: .8rem;
+        margin-bottom: .7rem;
+    }
+    .registration button {
+        font-size: .8rem;
+        height: 1.8rem;
+    }
+    .registration .choosAvatar label {
+        font-size: .8rem;
+        height: 1.8rem;
+        margin-bottom: .7rem;
+    }
+}
+
+/* responsive end */

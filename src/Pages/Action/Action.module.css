@@ -1,0 +1,78 @@
+.action {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action section .actionInner {
+    width: 70%;
+    border: solid 1px #ccc;
+    padding: 1rem;
+    border-radius: .6rem;
+}
+
+.action section .actionInner input {
+    width: 100%;
+    font-size: 1.1rem;
+    border: solid 1px #ccc;
+    border-radius: .6rem;
+    padding: .5rem;
+    margin-bottom: .8rem;
+}
+
+.action section .actionInner .actionAvatar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.action section .actionInner .actionAvatar > input {
+    display: none;
+}
+
+.action section .actionInner .actionAvatar .actionAvatars {
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 49%;
+    padding: .4rem 0;
+    background: #ccc;
+    text-align: center;
+}
+
+.action section .actionInner .actionAvatar .actionAvatars:first-child {
+    border-radius: .6rem 0 0 .6rem;
+}
+
+.action section .actionInner .actionAvatar .actionAvatars:last-child {
+    border-radius: 0 .6rem .6rem 0; 
+}
+
+.action section .actionInner .actionButtons {
+    width: 100%;
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.action section .actionInner .actionButtons button {
+    font-size: 1.1rem;
+    width: 32%;
+    padding: .4rem 0;
+    background: #ccc;
+}
+
+.action section .actionInner .actionButtons button:first-child {
+    border-radius: .6rem 0 0 .6rem;
+}
+
+.action section .actionInner .actionButtons button:last-child {
+    border-radius: 0 .6rem .6rem 0;
+}

@@ -1,0 +1,94 @@
+.avatarSlider {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.80);
+    color: #fff;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    /* display: none; */
+    z-index: 10;
+}
+
+.avatarSlider .closeAvatarSlider {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    /* border: solid 1px #ccc; */
+    z-index: 11;
+}
+
+.avatarSlider .closeAvatarSlider img {
+    width: 100%;
+    pointer-events: none;
+}
+
+.avatarSlider button {
+    background: transparent;
+    width: 8.4rem;
+    height: 80%;
+    position: absolute;
+    z-index: 12;
+    /* border: solid 1px #ccc; */
+}
+
+.avatarSlider button img {
+    width: 100%;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.avatarSlider button:nth-child(2) {
+    transform: rotate(180deg);
+    left: 2rem;
+}
+
+.avatarSlider button:last-child {
+    right: 2rem;
+}
+
+.avatarSlider .sliders {
+    /* border: solid 1px #fff; */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.avatarSlider .sliders .sliderInner {
+    /* border: solid 1px #fff; */
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+/* responsive start */
+
+@media(max-width: 1024px){
+    .avatarSlider {
+        padding: 0 .7rem;
+    }
+    .avatarSlider button:nth-child(2) {
+        left: .6rem;
+    }
+    .avatarSlider button:last-child {
+        right: .6rem;
+    }
+}
+
+@media(max-width: 320px){
+    .avatarSlider button {
+        width: 5.4rem;
+    }
+}
+
+/* responsive end */

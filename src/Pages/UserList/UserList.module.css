@@ -1,0 +1,124 @@
+.userList {
+    margin-top: 1rem;
+    width: 100%;
+    height: calc(100vh - 5.6rem);
+    border: solid 1px #ccc;
+    border-radius: .6rem;
+    padding: .4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.userList .userFreands {
+    width: 30%;
+    border: solid 1px #ccc;
+    border-radius: .6rem;
+    padding: .4rem;
+    overflow-y: auto;
+}
+
+.userList .userMessages {
+    width: 68%;
+    border: solid 1px #ccc;
+    border-radius: .6rem;
+    padding: .8rem;
+    display: flex;
+    flex-flow: column;
+}
+
+.userList .userMessages .messages {
+    height: 92%;
+    border-bottom: 2px #ccc solid;
+    overflow-y: auto;
+    padding: 1.4rem 0;
+}
+
+.userList .userMessages .messages .backMessages {
+    width: 1.6rem;
+    margin-bottom: .6rem;
+    transform: rotate(180deg);
+    display: none;
+}
+
+.userList .userMessages .newMessages {
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.userList .userMessages .newMessages input {
+    border-bottom: solid 1px #ccc;
+    padding: .4rem;
+    width: 90%;
+    font-size: 1rem;
+}
+
+.userList .userMessages .newMessages button {
+    width: 10%;
+    height: 80%;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* responsive start */
+
+@media(max-width: 624px){
+    .userList .userFreands {
+        width: 38%;
+    }
+    .userList .userMessages {
+        width: 60%;
+    }
+}
+
+@media(max-width: 768px){
+    .userList .userMessages .messages {
+        padding: 0;
+    }
+    .userList .userMessages .newMessages input {
+        font-size: .8rem;
+    }
+    .userList .userMessages .newMessages button {
+        font-size: .8rem;
+    }
+}
+
+@media(max-width: 624px){
+    .userList .userMessages .messages {
+        padding: 0;
+    }
+    .userList .userMessages .newMessages input {
+        font-size: .6rem;
+        width: 84%;
+    }
+    .userList .userMessages .newMessages button {
+        font-size: .6rem;
+        width: 16%;
+    }
+}
+
+@media(max-width: 425px){
+    .userList {
+        position: relative;
+    }
+    .userList .userFreands {
+        width: 100%;
+    }
+    .userList .userMessages {
+        width: 100%;
+        height: calc(100vh - 5.6rem);
+        position: absolute;
+        top: 0rem;
+        left: -106%;
+        background: #fff;
+        z-index: 13;
+        padding: .4rem;
+        transition: .3s ease;
+    }
+    .userList .userMessages .messages .backMessages {
+        display: block;
+    }
+}
+
+/* responsive end */

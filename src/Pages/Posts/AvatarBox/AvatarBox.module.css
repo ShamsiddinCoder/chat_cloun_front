@@ -1,0 +1,57 @@
+.avatarBox {
+    height: 7rem;
+    border: solid 1px #ccc;
+    margin: .4rem;
+    position: relative;
+}
+
+.avatarBox .avatarBoxImg {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px #ccc;
+    overflow: hidden;
+}
+
+.avatarBox .avatarBoxImg img {
+    height: 100%;
+    size: cover;
+}
+
+.avatarBox .avatarBoxTitle {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 .4rem;
+}
+
+.avatarBox .avatarBoxTitle h4 {
+    font-size: .8rem;
+}
+
+
+/* responsive start */
+
+@media(max-width: 926px){
+    .avatarBox {
+        height: 6rem;
+    }
+    .avatarBox .avatarBoxTitle h4 {
+        font-size: .6rem;
+    }
+}
+
+@media(max-width: 396px){
+    .avatarBox {
+        height: 5rem;
+    }
+    .avatarBox .avatarBoxTitle h4 {
+        font-size: .5rem;
+    }
+}
+
+/* responsive end */

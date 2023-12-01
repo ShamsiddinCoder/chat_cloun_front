@@ -1,0 +1,25 @@
+.removeMessage {
+    position: absolute;
+    background: #fff;
+    left: 50%;
+    padding: .3rem;
+    border: solid 1px #ccc;
+    border-radius: .4rem;
+    display: flex;
+    flex-flow: column;
+    width: 6rem;
+    z-index: 10;
+}
+
+.removeMessage button {
+    font-size: .8rem;
+    font-weight: 600;
+    margin: .3rem 0;
+    padding: .2rem 0;
+    transition: .2s ease;
+}
+
+.removeMessage button:hover {
+    color: #fff;
+    background: rgb(112, 112, 112);
+}

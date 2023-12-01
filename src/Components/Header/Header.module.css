@@ -1,0 +1,190 @@
+.header {
+    width: 100%;
+    height: 4rem;
+    box-shadow: 0 0 16px 10px rgba(0,0,0,0.20);
+    display: flex;
+}
+
+.header section .headerInner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header section .headerInner .headerAvatar {
+    display: flex;
+    align-items: center;
+}
+
+.header section .headerInner .headerAvatar .headerAvatarImg {
+    width: 3.6rem;
+    height: 3.6rem;
+    border: solid 1px #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-right: 2rem;
+}
+
+.header section .headerInner .headerAvatar .headerAvatarImg img {
+    height: 100%;
+}
+
+.header section .headerInner .headerAvatar h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(102, 102, 102);
+}
+
+.header section .headerInner .headerNavbar {
+    display: flex;
+    align-items: center;
+}
+
+.header section .headerInner .headerNavbar .search {
+    width: 1.2rem;
+    margin-right: 1rem;
+}
+
+.header section .headerInner .headerNavbar .headerSearch {
+    position: absolute;
+    top: 2.4rem;
+    right: 18rem;
+    background: #fff;
+    width: 21rem;
+    /* height: 34rem; */
+    padding: .4rem;
+    border: solid 1px #ccc;
+    border-radius: .6rem;
+    overflow: hidden;
+    transition: .4s ease;
+    z-index: 10;
+}
+
+.header section .headerInner .headerNavbar .headerSearch input {
+    border: solid 1px #ccc;
+    padding: .4rem;
+    margin-right: .4rem;
+    border-radius: .4rem 0 0 .4rem;
+    transition: .4s ease;
+    width: 14rem;
+}
+
+.header section .headerInner .headerNavbar .headerSearch > button {
+    border: solid 1px #ccc;
+    padding: .4rem;
+    border-radius: 0 .4rem .4rem 0;
+    width: 5.4rem;
+}
+
+.header section .headerInner .headerNavbar .headerSearch .headerSearchList {
+    border: solid 1px #ccc;
+    padding: .2rem;
+    margin-top: .6rem;
+    border-radius: 0 0 .4rem .4rem;
+    height: 30rem;
+    overflow-y: auto;
+}
+
+.header section .headerInner .headerNavbar .subFreands {
+    position: absolute;
+    background: #fff;
+    top: 2.4rem;
+    right: 15rem;
+    border: solid 1px #ccc;
+    border-radius: .6rem;
+    padding: .6rem;
+    width: 21rem;
+    overflow-y: auto;
+    transition: .4s ease;
+    z-index: 10;
+}
+
+.header section .headerInner .headerNavbar .navSubMessage {
+    display: flex;
+}
+
+.header section .headerInner .headerNavbar .navSubMessage img {
+    width: 1.2rem;
+    margin-right: .4rem;
+}
+
+.header section .headerInner .headerNavbar a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(143, 143, 143);
+    margin-left: 1.6rem;
+}
+
+.header section .headerInner .headerNavbar a:hover {
+    color: rgb(102, 102, 102);
+}
+
+
+/* responsife start */
+
+@media (max-width: 768px) {
+    .header {
+        height: 3rem;
+    }
+    .header section .headerInner .headerAvatar .headerAvatarImg {
+        width: 2.2rem;
+        height: 2.2rem;
+        margin-right: 1rem;
+    }
+    .header section .headerInner .headerAvatar h4 {
+        font-size: 1rem;
+    }
+    .header section .headerInner .headerNavbar a {
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+    .header section .headerInner .headerNavbar .search {
+        width: 1rem;
+        margin-right: .7rem;
+    }
+    .header section .headerInner .headerNavbar .navSubMessage img {
+        width: .9rem;
+        height: 1rem;
+        margin-right: .2rem;
+    }
+    .header section .headerInner .headerNavbar .navSubMessage h4 {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .header {
+        height: 2.2rem;
+    }
+    .header section .headerInner .headerAvatar .headerAvatarImg {
+        width: 2rem;
+        height: 2rem;
+        margin-right: .6rem;
+    }
+    .header section .headerInner .headerAvatar h4 {
+        font-size: .8rem;
+    }
+    .header section .headerInner .headerNavbar a {
+        font-size: .8rem;
+        margin-left: .7rem;
+    }
+    .header section .headerInner .headerNavbar .search {
+        width: .8rem;
+        margin-right: .5rem;
+    }
+    .header section .headerInner .headerNavbar .navSubMessage img {
+        width: .8rem;
+        height: .9rem;
+        margin-right: .1rem;
+    }
+    .header section .headerInner .headerNavbar .navSubMessage h4 {
+        font-size: .7rem;
+    }
+}
+
+/* responsife end */
